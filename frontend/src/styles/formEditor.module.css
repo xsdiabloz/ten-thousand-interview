@@ -1,0 +1,45 @@
+.editorWrapper {
+    background-color: #f0ebf8;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.content {
+    max-width: 770px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.loading, .error {
+    padding: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #70757a;
+}
+
+.emptyState {
+    text-align: center;
+    color: #70757a;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+}
+
+.addBtn {
+    align-self: flex-start;
+    background-color: #673ab7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.addBtn:hover {
+    background-color: #512da8;
+}

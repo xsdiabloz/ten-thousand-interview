@@ -1,0 +1,114 @@
+.container {
+    max-width: 680px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+.header {
+    background: #fff;
+    border-top: 10px solid #673ab7;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+}
+
+.questionCard {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.2s;
+}
+
+.questionTitle {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.textInput {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.textInput:focus {
+    border-bottom: 2px solid #673ab7;
+}
+
+.optionsList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.optionLabel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.submitBtn {
+    background-color: #673ab7;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submitBtn:disabled {
+    background-color: #b0bec5;
+    cursor: not-allowed;
+}
+
+.submitBtn:hover:not(:disabled) {
+    background-color: #512da8;
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    color: #6366f1;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    background-color: rgba(99, 102, 241, 0.05);
+    border: 1px solid transparent;
+}
+
+
+.backLink:hover {
+    background-color: rgba(99, 102, 241, 0.1);
+    transform: translateX(-4px);
+    color: #4f46e5;
+}

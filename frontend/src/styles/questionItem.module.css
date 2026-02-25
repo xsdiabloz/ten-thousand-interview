@@ -1,0 +1,112 @@
+.questionCard {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+    padding: 24px;
+    margin-bottom: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.questionCard:hover {
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+
+.questionInput {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 12px 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-bottom-color 0.2s, background-color 0.2s;
+}
+
+.questionInput:focus {
+    border-bottom: 2px solid #673ab7;
+    background-color: #f8f9fa;
+}
+
+.typeSelect {
+    padding: 8px 12px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.optionsList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.optionRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.optionInput {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid transparent;
+    padding: 6px 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-bottom-color 0.2s;
+}
+
+.optionInput:focus {
+    border-bottom: 1px solid #673ab7;
+}
+
+
+.deleteQuestionBtn, .removeOptionBtn {
+    background: none;
+    border: none;
+    color: #5f6368;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.2s, color 0.2s;
+}
+
+.deleteQuestionBtn:hover {
+    background-color: #fbe9e7;
+    color: #d93025;
+}
+
+.removeOptionBtn:hover {
+    background-color: #f1f3f4;
+    color: #202124;
+}
+
+.addOptionBtn {
+    background: none;
+    border: none;
+    color: #673ab7;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px;
+    margin-top: 8px;
+    width: fit-content;
+    transition: opacity 0.2s;
+}
+
+.addOptionBtn:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}

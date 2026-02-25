@@ -1,0 +1,37 @@
+{
+  "name": "ten-thousand-interview",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+    "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "npm run dev --workspace=frontend",
+    "backend": "npm run dev --workspace=backend",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xsdiabloz/ten-thousand-interview.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/xsdiabloz/ten-thousand-interview/issues"
+  },
+  "homepage": "https://github.com/xsdiabloz/ten-thousand-interview#readme",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
